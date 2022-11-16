@@ -21,10 +21,10 @@ document.addEventListener("keydown", event => {
     if(both==0){
         console.log(event.key);
         both++;
-        if(event.key=='a'){
+        if(event.key=='a'||'A'||'s'||'S'){
             interval = setInterval(moveLeft, 1);
         }
-        if(event.key=='d'){
+        if(event.key=='d'||'D'||'w'||'W'){
             interval = setInterval(moveRight, 1);
         }
     }
